@@ -1,6 +1,10 @@
+import styles from "./transactions.module.css"
+
+
 export const TransactionHistory = ({items}) => {
-    return (<table>
-  <thead>
+    return (
+  <table className={styles.transaction_history}>
+  <thead className={styles.common}>
     <tr>
       <th> Type</th>
       <th> Amount</th>
@@ -8,7 +12,7 @@ export const TransactionHistory = ({items}) => {
     </tr>
   </thead>
 
-  <tbody>
+  <tbody className={styles.common}>
       {items.map(item => (
         <tr key={item.id}>
           <td>{item.type}</td>

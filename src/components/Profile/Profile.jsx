@@ -1,24 +1,28 @@
-import React from 'react';const Profile = ({name, tag, location, avatar, stats }) => {
-  return <div>
-  <div>
-  <img src={avatar} alt="user avatar"/>
-    <p> {name} </p>
-    <p> @{tag} </p>
-    <p> {location} </p>
+import styles from './profile.module.css';
+
+
+
+const Profile = ({name, tag, location, avatar, stats }) => {
+  return <div className={styles.common}>
+  <div className={styles.description}>
+  <img src={avatar} alt="user avatar" className={styles.avatar}/>
+    <p className={styles.name}> {name} </p>
+    <p className={styles.tag}> @{tag} </p>
+    <p className={styles.location}> {location} </p>
   </div>
 
-  <ul>
-    <li>
-      <span> Followers </span>
-      <span> {stats.followers} </span>
+  <ul className={styles.list}>
+    <li className={styles.li}>
+      <span className={styles.lable}> Followers </span>
+      <span className={styles.number}> {stats.followers}  </span>
     </li>
-    <li>
-      <span> Views </span>
-      <span> {stats.views} </span>
+    <li className={styles.li}>
+      <span className={styles.lable}> Views </span>
+      <span className={styles.number}> {stats.views} </span>
     </li>
-    <li>
-      <span> Likes </span>
-      <span> {stats.likes}  </span>
+    <li className={styles.li}>
+      <span className={styles.lable}> Likes </span>
+      <span className={styles.number}> {stats.likes} </span>
     </li>
   </ul>
 </div>
