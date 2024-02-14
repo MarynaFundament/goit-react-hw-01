@@ -20,6 +20,7 @@
 
     border: 1.5px solid grey;
     border-radius: 10px; 
+
 }
 
 .img{
@@ -46,15 +47,15 @@
 
 .statusOn{
     font-size: 15px;
-    margin-left: 15px;
-    padding-top: 10px;
+    margin-left: 20px;
+    margin-top: -10px;
     color: green;
 }
 
 
 .statusOff{
     color: red;
-    margin-left: 15px;
-    padding-top: 10px;
+    margin-left: 20px;
+    margin-top: -10px;
 }
 
