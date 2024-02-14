@@ -2,7 +2,7 @@ import styles from "./transactions.module.css"
 
 
 export const TransactionHistory = ({items}) => {
-    return (
+   
   <table className={styles.transaction_history}>
   <thead className={styles.common}>
     <tr>
@@ -22,6 +22,6 @@ export const TransactionHistory = ({items}) => {
       ))}
     </tbody>
   </table>
-)}
+}
 
 export default TransactionHistory;

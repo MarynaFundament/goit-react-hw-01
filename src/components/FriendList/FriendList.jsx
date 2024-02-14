@@ -1,9 +1,6 @@
 import styles from './friendslist.module.css';
 
-
-
  const FriendList = ({ friends }) => (
-
 
 	<ul className={styles.common} >
 	  {friends.map(friend => (
