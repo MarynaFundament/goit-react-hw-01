@@ -1,6 +1,6 @@
 import styles from './profile.module.css';
 
-const Profile = ({name, tag, location, avatar, stats }) => {
+const Profile = ({name, tag, location, avatar, stats }) => 
    <div className={styles.common}>
   <div className={styles.description}>
   <img src={avatar} alt="Jacques Gluke photo" className={styles.avatar}/>
@@ -24,9 +24,10 @@ const Profile = ({name, tag, location, avatar, stats }) => {
     </li>
   </ul>
 </div>
-}
+
 
 Profile.defaultProps = {
+  
   name: 'Petra Marica',
   tag: '@pmarica',
   location: 'Salvador, Brasil',
